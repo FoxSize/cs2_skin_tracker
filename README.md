@@ -37,28 +37,31 @@ Transform & Analytics (SQL-аналитика):
 
 Обобщенными табличными выражениями и подзапросами (CTE)
 
-🚀 Быстрый старт
+##🚀 Быстрый старт
 
-1. Клонирование и настройка окружения
+**1. Клонирование и настройка окружения**
 
+```bash
 git clone https://github.com/ВАШ_НИК/cs2_skin_tracker.git
 cd cs2_skin_tracker
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
+```
 
 2. Запуск базы данных
 
 # Поднимаем PostgreSQL в фоновом режиме
+```bash
 sudo docker compose up -d
-
+```
 
 3. Запуск ETL-пайплайна
 
 # Оркестратор сам инициализирует таблицы, соберет данные и выведет аналитику
+```bash
 python pipeline.py
-
+```
 
 👤 Автор
 
